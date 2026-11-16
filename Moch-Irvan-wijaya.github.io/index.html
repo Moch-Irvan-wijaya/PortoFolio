@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irvan Wijaya | Mahasiswa Sistem Informasi & Web Developer</title>
+  <meta name="description" content="Portofolio Mochammad Irvan Wijaya, mahasiswa Sistem Informasi STT Terpadu Nurul Fikri yang membangun aplikasi web fullstack.">
+  <meta property="og:title" content="Irvan Wijaya | Portofolio">
+  <meta property="og:description" content="Mahasiswa Sistem Informasi & Fullstack Web Developer dari Depok.">
+  <meta property="og:image" content="https://moch-irvan-wijaya.github.io/assets/foto.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Bricolage+Grotesque:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#home" class="logo">Irvan<span>.</span></a>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#journey">Perjalanan</a>
+      <a href="#projects">Proyek</a>
+      <a href="#skills">Skill</a>
+      <a href="#contact">Kontak</a>
+      <button id="theme-toggle" aria-label="Ganti tema">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="hello">Halo, saya Irvan 👋</p>
+      <h1>Mochammad<br>Irvan Wijaya</h1>
+      <p class="typing">Saya seorang <span id="typed"></span><i class="caret"></i></p>
+      <p class="tagline">Mahasiswa Sistem Informasi dari Depok yang mengubah ide menjadi aplikasi web yang rapi, cepat, dan nyaman dipakai.</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">Lihat proyek</a>
+        <a href="assets/CV-Irvan-Wijaya.pdf" class="btn ghost" download>Unduh CV</a>
+        <a href="#contact" class="btn ghost">Hubungi saya</a>
+      </div>
+      <div class="stats">
+        <div><b data-count="9">0</b><span>Repositori tugas & proyek</span></div>
+        <div><b data-count="5">0</b><span>Semester ditempuh</span></div>
+        <div><b data-count="4">0</b><span>Bahasa & framework utama</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <h2>Tentang saya</h2>
+      <div class="about-grid glass">
+        <img src="assets/Pp.jpg" alt="Foto Mochammad Irvan Wijaya" class="avatar">
+        <div>
+          <p>Saya Irvan, mahasiswa semester 5 Sistem Informasi di STT Terpadu Nurul Fikri, Depok. Ketertarikan saya ada di pengembangan web fullstack, dari antarmuka yang enak dilihat sampai logika di balik layar.</p>
+          <p>Saat ini saya mengikuti program MBKM SIB NFA untuk memperdalam Fullstack Web Development. Saya belajar paling cepat dengan membangun proyek nyata, seperti toko buku online BookStore.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section reveal">
+      <h2>Perjalanan belajar</h2>
+      <div class="timeline">
+        <article class="glass">
+          <time>Sekarang</time>
+          <h3>MBKM SIB NFA</h3>
+          <p>Program Studi Independen Bersertifikat: Fullstack Web Development, praktik JavaScript, PHP, Laravel, dan ReactJS lewat tugas dan proyek akhir.</p>
+        </article>
+        <article class="glass">
+          <time>Semester 5</time>
+          <h3>STT Terpadu Nurul Fikri</h3>
+          <p>S1 Sistem Informasi. Mempelajari analisis sistem, basis data, dan pemrograman web.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2>Proyek pilihan</h2>
+      <div class="filters" role="group" aria-label="Filter proyek">
+        <button class="chip active" data-filter="all">Semua</button>
+        <button class="chip" data-filter="fullstack">Fullstack</button>
+        <button class="chip" data-filter="frontend">Frontend</button>
+        <button class="chip" data-filter="backend">Backend</button>
+      </div>
+      <div class="cards">
+        <article class="card glass" data-cat="fullstack frontend">
+          <img src="assets/projects/bookstore.png" alt="Tampilan beranda BookStore">
+          <div class="card-body">
+            <h3>BookStore</h3>
+            <p>Toko buku online dengan pencarian judul, filter genre, halaman login dan daftar, serta katalog buku yang tertata rapi.</p>
+            <div class="tags"><span>React</span><span>Vite</span><span>MySQL</span></div>
+            <div class="links"><a href="https://github.com/Moch-Irvan-wijaya" target="_blank" rel="noopener">Kode ↗</a></div>
+          </div>
+        </article>
+        <article class="card glass" data-cat="fullstack backend">
+          <div class="thumb t1"><span>VESHub</span></div>
+          <div class="card-body">
+            <h3>VESHub (Proyek Akhir)</h3>
+            <p>Proyek akhir program Fullstack Web Development yang menggabungkan antarmuka web dengan sisi server dan basis data.</p>
+            <div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
+            <div class="links"><a href="https://github.com/Moch-Irvan-wijaya/FinalProjek_VESHub" target="_blank" rel="noopener">Kode ↗</a></div>
+          </div>
+        </article>
+        <article class="card glass" data-cat="frontend">
+          <div class="thumb t2"><span>ReactJS</span></div>
+          <div class="card-body">
+            <h3>Latihan ReactJS</h3>
+            <p>Aplikasi React berbasis komponen, state, dan props sebagai dasar membangun UI yang interaktif.</p>
+            <div class="tags"><span>React</span><span>JavaScript</span></div>
+            <div class="links"><a href="https://github.com/Moch-Irvan-wijaya/ReactJS_Tugas_3" target="_blank" rel="noopener">Kode ↗</a></div>
+          </div>
+        </article>
+        <article class="card glass" data-cat="backend fullstack">
+          <div class="thumb t3"><span>Laravel</span></div>
+          <div class="card-body">
+            <h3>Latihan Laravel</h3>
+            <p>Aplikasi web dengan Laravel: routing, controller, Blade, dan koneksi ke database.</p>
+            <div class="tags"><span>Laravel</span><span>PHP</span></div>
+            <div class="links"><a href="https://github.com/Moch-Irvan-wijaya/Laravel-Tugas-Update" target="_blank" rel="noopener">Kode ↗</a></div>
+          </div>
+        </article>
+        <article class="card glass" data-cat="frontend">
+          <div class="thumb t4"><span>JavaScript</span></div>
+          <div class="card-body">
+            <h3>Seri Tugas JavaScript</h3>
+            <p>Enam latihan JavaScript dari dasar sampai manipulasi DOM dan logika interaktif.</p>
+            <div class="tags"><span>JavaScript</span><span>DOM</span></div>
+            <div class="links"><a href="https://github.com/Moch-Irvan-wijaya/JavaScript_Tugas5" target="_blank" rel="noopener">Kode ↗</a></div>
+          </div>
+        </article>
+        <article class="card glass" data-cat="backend">
+          <div class="thumb t5"><span>PHP</span></div>
+          <div class="card-body">
+            <h3>Latihan PHP Native</h3>
+            <p>Dasar pemrograman server-side dengan PHP: form, validasi, dan pengolahan data.</p>
+            <div class="tags"><span>PHP</span><span>MySQL</span></div>
+            <div class="links"><a href="https://github.com/Moch-Irvan-wijaya/PHP_Tugas1" target="_blank" rel="noopener">Kode ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2>Skill</h2>
+      <div class="skills">
+        <div class="glass skill-group"><h3>Frontend</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>ReactJS</span><span>Vite</span></div></div>
+        <div class="glass skill-group"><h3>Backend</h3>
+          <div class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></div></div>
+        <div class="glass skill-group"><h3>Tools</h3>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>XAMPP</span></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal contact">
+      <div class="glass contact-box">
+        <h2>Mari berkolaborasi</h2>
+        <p>Punya proyek, tawaran magang, atau ingin ngobrol soal web? Kirim pesan kapan saja.</p>
+        <a href="mailto:mirvanwijaya14@gmail.com" class="btn primary">mirvanwijaya14@gmail.com</a>
+        <div class="socials">
+          <a href="https://github.com/Moch-Irvan-wijaya" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/mochammad-irvan-wijaya-77851433b/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://instagram.com/mochirwi" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year">2026</span> Mochammad Irvan Wijaya. Dibuat dengan ♥ dan GitHub Pages.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
