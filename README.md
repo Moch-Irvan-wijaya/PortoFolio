@@ -2,7 +2,7 @@
 
 Website portofolio pribadi dengan tema **modern gelap (dark glassmorphism)** yang dibangun dari HTML, CSS, dan JavaScript murni, tanpa framework dan tanpa proses build.
 
-**Demo:** https://PortoFolio/
+**Demo:** https://moch-irvan-wijaya.github.io/PortoFolio/Moch-Irvan-wijaya.github.io/
 
 ![Foto profil](Moch-Irvan-wijaya.github.io/assets/Pp.jpg)
 
