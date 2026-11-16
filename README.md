@@ -4,7 +4,7 @@ Website portofolio pribadi dengan tema **modern gelap (dark glassmorphism)** yan
 
 **Demo:** https://moch-irvan-wijaya.github.io/PortoFolio/
 
-![Foto profil](assets/Pp.jpg)
+![Foto profil](Moch-Irvan-wijaya.github.io/assets/Pp.jpg)
 
 ## Tentang
 
